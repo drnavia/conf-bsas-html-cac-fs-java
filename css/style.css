@@ -1,0 +1,151 @@
+* {
+    font-family: 'Open Sans', sans-serif;   
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+/********** HEADER **********/
+/* NAVBAR */
+.nav-item :hover {
+    color: white !important;
+}
+
+/********** MAIN **********/
+/* CAROUSEL */
+.carousel-item>img {
+    height: 90vh;
+    object-fit: cover;
+}
+
+.text-carousel {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.text-carousel>div {
+    bottom: 10rem;
+    right: 6rem;
+    width: 43vw;
+}
+
+.text-carousel-descripcion {
+    font-size: larger;
+}
+
+/* TARJETAS */
+#card-oradores {
+    background-color: #ffffff;
+    height: 80vh;
+}
+
+.card:hover {
+    bottom: 20px;
+}
+
+.card-text {
+    font-size: small;
+}
+
+/* BANNER */
+#banner-lugar {
+    height: 60vh;
+}
+
+.banner-img {
+    background-attachment: fixed;
+    background-image: url('../img/ban-honolulu.jpg');
+    background-size: contain;
+}
+
+/* FORMULARIO */
+#form-orador {
+    height: 60vh;
+}
+
+/********** FOOTER **********/
+/* FOOTER CAC */
+#footer-cac {
+    background: linear-gradient(to right, #1d3947, #1e5372);
+    height: 10vh;
+}
+
+#footer-cac>ul>li {
+    color: white;
+    list-style: none;
+    padding-left: 3rem;
+    
+}
+
+#footer-cac>ul>li>a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/********** MEDIA QUERY **********/
+@media (max-width: 450px) {
+    /* CAROUSEL */
+    .text-carousel>div {
+        bottom: 10rem;
+        font-size: smaller;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80vw;
+    }
+
+    /* TARJETAS */
+    #card-oradores {
+        height: auto;
+    }
+    .card {
+        margin-bottom: 2rem;
+    }
+
+    /* BANNER */
+    #banner-lugar {
+        flex-direction: column !important;
+        height: auto;
+    }
+
+    #banner-lugar>div {
+        text-align: center;
+        width: 100vw !important;
+    }
+
+    .banner-img {
+        background-attachment: revert;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+    }
+
+    /* FORMULARIO */
+    #form-orador {
+        height: auto;
+        padding: 0;
+    }
+
+    #form-orador-cuerpo {
+        width: 80% !important;
+    }
+
+    /* FOOTERS */
+    #footer-cac {
+        height: auto;
+    }
+
+    #footer-cac>ul {
+        display: flex;
+        flex-flow: column wrap !important;
+        margin: 1rem;
+        padding: 0 !important;
+        text-align: center;
+    }
+    #footer-cac>ul>li {
+        padding: .8rem  0;
+    }
+}
