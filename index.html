@@ -30,22 +30,22 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
-                    <ul class="navbar-nav ">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#conferencia">La conferencia</a>
+                            <a class="nav-link active" href="#conferencia">La conferencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#card-oradores">Los oradores</a>
+                            <a class="nav-link" href="#card-oradores">Los oradores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#banner-lugar">El lugar y la fecha</a>
+                            <a class="nav-link" href="#banner-lugar">El lugar y la fecha</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#form-orador">Conviértete en orador</a>
+                            <a class="nav-link" href="#form-orador">Conviértete en orador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-success" href="#">Comprar tickets</a>
+                            <a class="nav-link link-success" href="#">Comprar tickets</a>
                         </li>
                     </ul>
                 </div>
@@ -75,7 +75,7 @@
                         <div class=" position-absolute ">
                             <div class="d-flex flex-column text-end text-white">
                                 <h2 class="fw-bold">Conf Bs As</h2>
-                                <p class="text-carousel-descripcion">
+                                <p>
                                     Bs As llega por primera vez a Argentina. Un evento para compartir con nuetra comunidad el conocimiento y la experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
                                 </p>
                             </div>
@@ -93,16 +93,16 @@
             </div>
     
             <!-- ORADORES -->
-            <div class="d-flex flex-column " id="card-oradores">
+            <div class="d-flex flex-column px-4" id="card-oradores">
                 <!-- TITULO ORADORES -->
                 <div class="text-center">
-                    <P class="fw-lighter mt-3 mb-1" style="font-size: small;">CONOCE A LOS</P>
-                    <h2 class="fw-bold">ORADORES</h2>
+                    <p class="text-uppercase mt-3 mb-1 texto-small">Conocé a los</p>
+                    <h3 class="text-uppercase fw-bold">Oradores</h3>
                 </div>
     
                 <!-- TARJETAS ORADORES -->
-                <div class="d-flex flex-row justify-content-center my-3 flex-wrap">
-                    <div class="card shadow-sm mx-4" style="width: 22rem;">
+                <div class="row row-cols-1 row-cols-md-4 justify-content-center m-2">
+                    <div class="card h-100 shadow-sm m-2 p-0">
                         <img src="./img/ora-steve.jpg" class="card-img-top" alt="imagen de steve jobs">
                         <div class="card-body">
                             <span class="badge text-bg-warning">Javascript</span>
@@ -113,7 +113,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card shadow-sm mx-4" style="width: 22rem;">
+                    <div class="card h-100 shadow-sm m-2 p-0">
                         <img src="./img/ora-ada.jpeg" class="card-img-top" alt="imagen de ada lovelace">
                         <div class="card-body">
                             <span class="badge text-bg-secondary">Negocios</span>
@@ -124,7 +124,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card shadow-sm mx-4" style="width: 22rem;">
+                    <div class="card h-100 shadow-sm m-2 p-0">
                         <img src="./img/ora-bill.jpg" class="card-img-top" alt="imagen de bill gates">
                         <div class="card-body">
                             <span class="badge text-bg-warning">Javascript</span>
@@ -139,21 +139,27 @@
             </div>
     
             <!-- BANNER -->
-            <div class="d-flex flex-row banner" id="banner-lugar">
-                <div class="w-50 banner-img"></div>
-                <div class="w-50 border border-1 border-start border-white text-white fw-lighter p-3 fs-smaller" style="background-color: #353a40;">
-                    <h3 class="fw-bold">Bs As - Octubre</h3>
-                    <p class="text-break">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
-                    <button class="btn btn-outline-light">Conocé más</button>
+            <div class="card my-4" id="banner-lugar">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="./img/ban-honolulu.jpg" class="img-fluid h-100" alt="Honolulu">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body bg-dark text-light h-100">
+                            <h3 class="card-title">Bs As - Octubre</h3>
+                            <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+                            <button class="btn btn-outline-light">Conocé más</button>
+                        </div>
+                    </div>
                 </div>
             </div>
     
             <!-- FORM ORADOR -->
-            <div class="d-flex flex-column align-items-center " id="form-orador" style="background-color: #efeeee;">
+            <div class="d-flex flex-column align-items-center px-4" id="form-orador">
                 <!-- TITULO FORMULARIO -->
                 <div class="text-center">
-                    <p class="fw-lighter mt-3 mb-1" style="font-size: small;">CONVIÉRTETE EN UN</p>
-                    <h2 class="fw-bold">ORADOR</h2>
+                    <p class="text-uppercase mt-3 mb-1 texto-small">Conviértete en un</p>
+                    <h3 class="text-uppercase fw-bold">Orador</h3>
                     <p>Anotate como orador para dar una <abbr title="attribute">charla ignite</abbr>. Cuéntanos de qué quieres hablar!</p>
                 </div>
 
@@ -171,7 +177,7 @@
                                 <textarea class="form-control" placeholder="Sobre que quieres hablar?" id="floatingTextarea2" style="height: 120px; max-height: 160px;"></textarea>
                                 <label for="floatingTextarea2">Sobre que quieres hablar?</label>
                             </div>
-                            <p class="text-body-secondary" style="font-size: small;">Recuerda incluir un título para tu charla.</p>
+                            <p class="form-text text-secondary ">Recuerda incluir un título para tu charla.</p>
                         </div>
                         <div class="col-12 d-flex mb-5">
                             <button class="btn text-white w-100" style="background-color: #96c93e;">
@@ -187,17 +193,15 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="d-flex align-items-center justify-content-center" id="footer-cac">
-            <ul class="d-flex flex-row text-center p-0 fw-6">
-                <li class="px-5"><a href="#">Pregutas<br/> frecuentes</a></li>
-                <li class="px-5"><a href="#">Contáctanos</a></li>
-                <li class="px-5"><a href="#">Prensa</a></li>
-                <li class="px-5"><a href="#">Conferencias</a></li>
-                <li class="px-5"><a href="#">Términos y<br/> condiciones</a></li>
-                <li class="px-5"><a href="#">Privacidad</a></li>
-                <li class="px-5"><a href="#">Estudiantes</a></li>
-            </ul>
-        </div>
+        <ul class="nav footer-fondo mt-3 py-4 justify-content-center">
+            <li class="nav-item"><a href="#" class="nav-link link-light">Pregutas<br/> frecuentes</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-light">Contáctanos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-light">Prensa</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-light">Conferencias</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-light">Términos y<br/> condiciones</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-light">Privacidad</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-light">Estudiantes</a></li>
+        </ul>
     </footer>
 
     <!-- SCRIPTS -->

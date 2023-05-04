@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+.texto-small {
+    font-size: x-small;
+}
+
 /********** HEADER **********/
 /* NAVBAR */
 .nav-item :hover {
@@ -26,8 +30,8 @@
 
 .text-carousel>div {
     bottom: 10rem;
-    right: 6rem;
-    width: 43vw;
+    right: 4rem;
+    width: 60vw;
 }
 
 .text-carousel-descripcion {
@@ -37,11 +41,6 @@
 /* TARJETAS */
 #card-oradores {
     background-color: #ffffff;
-    height: 80vh;
-}
-
-.card:hover {
-    bottom: 20px;
 }
 
 .card-text {
@@ -50,25 +49,14 @@
 
 /* BANNER */
 #banner-lugar {
-    height: 60vh;
-}
-
-.banner-img {
-    background-attachment: fixed;
-    background-image: url('../img/ban-honolulu.jpg');
-    background-size: contain;
-}
-
-/* FORMULARIO */
-#form-orador {
-    height: 60vh;
+    height: 100%;
 }
 
 /********** FOOTER **********/
 /* FOOTER CAC */
-#footer-cac {
+
+.footer-fondo {
     background: linear-gradient(to right, #1d3947, #1e5372);
-    height: 10vh;
 }
 
 #footer-cac>ul>li {
